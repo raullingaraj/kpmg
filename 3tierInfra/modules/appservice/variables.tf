@@ -7,10 +7,6 @@ variable "location" {
 type = string
 }
 
-/*variable "asename" {
-    type = string
-}*/
-
 
 variable "asp" {
 type = string
@@ -20,13 +16,6 @@ variable "waname" {
 type = string
 }
 
-variable "virtual_network_name" {
-type = string
-}
-
-variable "app_subnet_name" {
-type = string
-}
 
 variable "appinsight"{
     type = string
