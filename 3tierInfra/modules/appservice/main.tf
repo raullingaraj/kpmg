@@ -1,15 +1,3 @@
-# Reference of delegated Vnet & Subnet
-data "azurerm_virtual_network" "vnet" {
-  name                = var.virtual_network_name
-  resource_group_name = var.vnet_resource_group
-}
-
-data "azurerm_subnet" "subnet" {
-  name                 = var.app_subnet_name
-  resource_group_name  = var.vnet_resource_group
-  virtual_network_name = data.azurerm_virtual_network.vnet.name
-}
-
 
 data "azurerm_app_service_plan" "appserviceplan" {
   name                = var.asp
